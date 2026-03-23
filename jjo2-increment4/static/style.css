@@ -15,7 +15,7 @@
     grid-template-areas:
         "header header"
         "nav_bar nav_bar"
-        "main main-img"
+        "main main"
         "footer footer";
 }
 
@@ -31,10 +31,6 @@
 
 .main {
     grid-area: main;
-}
-
-.main_img {
-    grid-area: main-img;
 }
 
 .footer {
