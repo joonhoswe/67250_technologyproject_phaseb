@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse checkout page">
+  <script src="../static/script.js" defer></script>
+  <title>MonoMuse Checkout</title>
+
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/images/monomuse_logo.png" alt="MonoMuse museum logo">
+    </header>
+
+    <nav class="nav_bar" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Checkout</h1>
+
+      <form id="checkoutForm">
+        <label for="visitDate">Visit Date: (required)</label><br>
+        <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+        <label for="ticketType">Ticket Type: (required)</label><br>
+        <select id="ticketType" name="ticketType" required>
+          <option value="">Select Ticket Type</option>
+          <option value="general">General</option>
+          <option value="student">Student</option>
+          <option value="member">Member</option>
+        </select><br><br>
+
+        <label for="quantity">Ticket Quantity (1-10): (required)</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+        <label for="email">Email: (required)</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="zip">Zip Code: (optional)</label><br>
+        <input type="text" id="zip" name="zip" maxlength="5"><br><br>
+
+        <label for="mailingList">Join our mailing list</label>
+        <input type="checkbox" id="mailingList" name="mailingList"><br><br>
+
+        <p>Total: <span id="orderTotal">$18.00</span></p>
+        <p id="checkoutError"></p>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

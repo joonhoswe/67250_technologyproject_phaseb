@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../static/style.css">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse explore page">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="../static/script.js" defer></script>
+  <title>MonoMuse Explore</title>
+
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/images/monomuse_logo.png" alt="MonoMuse museum logo">
+    </header>
+
+    <nav class="nav_bar" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Explore MonoMuse</h1>
+      <img id="exploreImage" src="../static/images/monomuse.png" alt="Outside view of the MonoMuse museum building">
+
+      <h2>Mission Statement</h2>
+      <p>MonoMuse is a museum dedicated to serving the community with carefully curated pieces and artworks from the past. Our mission is to serve the broader Pittsburgh community, and to teach the community about the intersection of technology and art.</p>
+
+      <h2>Visitor Information</h2>
+      <p><strong>Address:</strong> 5032 Forbes Avenue, Pittsburgh, PA 15213</p>
+      <p><strong>Directions:</strong> MonoMuse is located near Carnegie Mellon University on Forbes Avenue.</p>
+      <p><strong>Contact:</strong> <a href="mailto:visit@monomuse.org">monomuse@monomuse.org</a> | <a href="tel:+14125550123">(412) 111-0123</a></p>
+
+      <h2>Membership and Donations</h2>
+      <p>Interested in supporting MonoMuse? Come see the front desk, and support via memberhsips or donations!</p>
+
+      <h2>Milestones</h2>
+      <ul>
+          <li>2021 - MonoMuse gets equipped with Virtual Reality technology for more immersive experiences</li>
+          <li>2019 - MonoMuse opens its doors to the Pittsburgh community.</li>
+      </ul>
+
+      <div id="map"></div>
+      <p>Map source: Leaflet with OpenStreetMap tiles.</p>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

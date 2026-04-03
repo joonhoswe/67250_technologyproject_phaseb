@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse exhibitions page">
+  <script src="../static/script.js" defer></script>
+  <title>MonoMuse Exhibitions</title>
+
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/images/monomuse_logo.png" alt="MonoMuse museum logo">
+    </header>
+
+    <nav class="nav_bar" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Current Exhibitions</h1>
+
+      <h2>
+          Exhibition 1: Virtual Dreams - Immersive Experience
+      </h2>
+      <p>
+          This exhibition immerses guests via virtual reality, taking them back into history. Guests can explore a variety of settings, such as ancient medieval times, the stone age, and the iron age.
+      </p>
+
+      <h2>
+          Exhibition 2: Algorithms and Artists
+      </h2>
+      <p>
+          This exhibition treats guests to a special experience full of our greatest artists and their works. Connected by sophisticated algorithms, interacting with one artist's work connects guests to a different artist based on their experiences.
+      </p>
+
+      <h2>Gallery</h2>
+      <img id="galleryImage" src="../static/images/museum1.jpg" alt="Museum gallery image 1">
+      <p id="galleryCaption">Exterior</p>
+      <button type="button" id="prevSlide">Previous</button>
+      <button type="button" id="nextSlide">Next</button>
+
+      <h2>Virtual Tour</h2>
+      <div style="margin-top: 20px; text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WBwNw4WjV7g?si=0C2IWVSf5B2UmrJ_" title="MonoMuse virtual tour video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p>Video source: https://www.youtube.com/watch?v=WBwNw4WjV7g (youtube) </p>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

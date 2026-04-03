@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse tickets page">
+  <script src="../static/script.js" defer></script>
+  <title>MonoMuse Tickets</title>
+
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/images/monomuse_logo.png" alt="MonoMuse museum logo">
+    </header>
+
+    <nav class="nav_bar" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Tickets and Visit Information</h1>
+
+      <div id="confirmationSection">
+        <h2>Order Confirmation</h2>
+        <p id="confirmationMessage"></p>
+        <p id="confirmationTotal"></p>
+      </div>
+
+      <p><strong>Hours:</strong> Tuesday through Sunday, 10:00 AM to 5:00 PM.</p>
+      <p><strong>Location:</strong> 5032 Forbes Avenue, Pittsburgh, PA 15213.</p>
+      <p><strong>Contact:</strong> <a href="mailto:visit@monomuse.org">visit@monomuse.org</a> | <a href="tel:+14125550123">(412) 555-0123</a></p>
+
+      <table>
+        <caption>Ticket Types</caption>
+        <thead>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General</td>
+            <td>General admission for all guests.</td>
+            <td>$18</td>
+          </tr>
+          <tr>
+            <td>Student</td>
+            <td>Student ID required.</td>
+            <td>$18</td>
+          </tr>
+          <tr>
+            <td>Member</td>
+            <td>Member ID required.</td>
+            <td>$18</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Available Dates</caption>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Availability</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>April 5, 2026</td>
+            <td>Available</td>
+            <td><button type="button" onclick="startCheckout('2026-04-05')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 12, 2026</td>
+            <td>Available</td>
+            <td><button type="button" onclick="startCheckout('2026-04-12')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 19, 2026</td>
+            <td>Available</td>
+            <td><button type="button" onclick="startCheckout('2026-04-19')">Buy Now</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>
